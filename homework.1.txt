@@ -1,0 +1,20 @@
+DIFFERENCES BETWEEN NULL AND UNDEFINED
+
+    NULL
+ Null in JavaScript is an assignment value. You can assign it to a variable.
+
+For example;
+
+var demo = null;
+alert(demo); //shows null
+alert(typeof demo); //shows object
+
+
+   UNDEFINED
+Whereas undefined means a variable has been declared, but no value has been assigned a value.
+
+For example;
+
+var demo;
+alert(demo); //shows undefined 
+alert(typeof demo); //shows undefined
