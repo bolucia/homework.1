@@ -1,0 +1,43 @@
+
+DECLARATION
+
+Declaration, generally, refers to the introduction of a new name in the program.
+For example, you can declare a new function by describing it's "signature":
+void xyz();
+
+or declare an incomplete type:
+class klass;
+struct ztruct;
+
+and last but not least, to declare an object:
+int x;
+
+It is described, in the C++ standard.
+
+
+DEFINITION
+
+A definition is a definition of a previously declared name (or it can be both definition and declaration).
+
+For example:
+int x;
+void xyz() {...}
+class klass {...};
+struct ztruct {...};
+enum { x, y, z };
+
+Specifically the C++ standard defines it.
+
+INITIALIZATION
+
+Initialization refers to the "assignment" of a value, at construction time.
+For a generic object of type T, it's often in the form:
+T x = i;
+
+but in C++ it can be:
+T x(i);
+
+or even:
+T x {i};
+with C++11.
+
