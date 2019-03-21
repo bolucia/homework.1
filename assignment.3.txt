@@ -1,0 +1,36 @@
+>var fruit_list=["Peach","Guava","Watermelon","Mango","Avocado"];
+
+<.undefined
+
+
+>var fruits
+
+<.undefined
+
+
+>function printfruits(fruits_list){fruit_list=["Peach","Guava","Watermelon","Mango","Avocado"];}
+
+<.undefined
+
+
+>fruit_list
+
+<.(5) ["Peach", "Guava", "Watermelon", "Mango", "Avocado"]
+
+<console.log(fruit_list);
+VM491:1
+ (5) ["Peach", "Guava", "Watermelon", "Mango", "Avocado"]
+0: "Peach"
+1:"Guava"
+2:"Watermelon"
+3:"Mango"
+4:"Avocado"
+length: 5
+__proto__:Array(0)
+
+<.undefined
+
+
+>fruit_list[4]
+
+<."Avocado"
