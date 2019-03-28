@@ -1,0 +1,29 @@
+>fruits={"peaches":60, "oranges":30, "mangoes":25}
+        
+ <.
+{peaches: 60, oranges: 30, mangoes: 25}
+
+
+>var quantity=2
+
+<.undefined
+
+
+>fruits["oranges"]*quantity
+
+<.60
+
+
+>quantity + "oranges" + "for KES" + fruits["oranges"]*quantity
+
+<."2orangesfor KES60"
+
+>function calculateFruitCost(fruit_specific,quantity)
+{return"2 oranges for KES 60"}
+
+<.undefined
+
+
+>calculateFruitCost("oranges",2);
+
+<.2 oranges for KES 60"
