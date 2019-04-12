@@ -1,0 +1,32 @@
+class LisaLab {
+  
+  constructor(name,age){
+    this.name=name;
+    this.age=age;
+  }
+  
+  getName(){
+    return this.name;
+   }
+    
+  getAge(){
+    return this.age;
+    
+  }
+}
+
+var Lucy=new LisaLab("Lucy",19);
+var Shalin=new LisaLab("Shalin",26);
+var Leah=new LisaLab("Leah",34);
+
+console.log(Lucy.getName())
+
+console.log(Shalin.getName())
+
+console.log(Leah.getName()) 
+
+console.log(Lucy.getAge())
+
+console.log(Shalin.getAge())
+
+console.log(Leah.getAge())
