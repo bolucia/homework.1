@@ -1,0 +1,22 @@
+class Person{
+  
+  constructor(){
+   this.hudumaNumber="";
+  }
+  
+  sethudumaNumber(hNumber){
+    this.hudumaNumber=hNumber
+   }
+    
+  gethudumaNumber(){
+    return this.hudumaNumber;
+  }
+    
+}
+
+var Lucian=new Person();
+
+Lucian.sethudumaNumber(456690);
+
+console.log(Lucian.gethudumaNumber());
+
