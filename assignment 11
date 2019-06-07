@@ -1,0 +1,81 @@
+  QUICK BASICS
+async is a keyword for the function declaration.
+await is used during the promise handling.
+await must be used within an async function, though Chrome now supports "top level" await.
+async functions return a promise, regardless of what the return value is within the function.
+async/await and promises are essentially the same under the hood.
+Available now in most browsers as well as Node.js.
+
+  BENEFITS OF ASYNC AND AWAIT
+Your code is more simplistic, precise.
+Debugging is easier thanks to less callbacks.
+Conversion from promise then / catch code is easy.
+Your code can be more "top down", less nesting.
+
+  BASIC ASYNC AND AWAIT ILLUSTRATION
+A very simple async / await usage:
+
+// Function declared as async so await can be used
+async function fetchContent() {
+  // Instead of using fetch().then, use await
+  let content = await fetch('/');
+  let text = await content.text();
+  
+  // Inside the async function text is the request body
+  console.log(text);
+
+  // Resolve this async function with the text
+  return text;
+}
+
+// Use the async function
+var promise = fetchContent().then(...);
+
+  CONVERTING PROMISE HANDLING TO AWAIT
+There's a good chance you'll want to update your promise code when time becomes available.  
+Below is an example:
+
+// Before: callback city!
+fetch('/users.json')
+  .then(response => response.json())
+  .then(json => {
+    console.log(json);
+  })
+  .catch(e => { console.log('error!'); })
+
+// After: no more callbacks!
+async function getJson() {
+  try {
+    let response = await fetch('/users.json');
+    let json = await response.json();
+    console.log(json);
+  }
+  catch(e) {
+    console.log('Error!', e);
+  }
+}
+
+
+
+var body=document.body
+body.style.backgroundColor="silver"
+
+var h1=document.getElementById("title")
+h1.style.color="green"
+
+
+
+var list =document.createElement("li")
+list.innerHTML="Strawberries"
+var fruit=document.getElementById("fruList")
+fruit.appendChild(list)
+
+var li =document.createElement("li")
+li.innerHTML="Kales"
+var veglist=document.getElementById("vegList")
+veglist.appendChild(li)
+
+var h3=document.getElementsByTagName("h3")
+ h3.innerHTML
+ var fonts=h3.document.getElementByTagName
+ fonts.style.textTransform="uppercase"
